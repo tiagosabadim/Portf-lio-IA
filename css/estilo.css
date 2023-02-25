@@ -1,0 +1,487 @@
+/* Reset de margem e padding */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+/* Botão flutuante */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+.floating-whatsapp:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.floating-whatsapp i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Header {*/
+header {
+      display: flex;
+      position: fixed;
+      top: 0;
+      width: 80%;
+      padding: 16px 152px 16px 152px;
+      transition: all 0.3s ease-in-out;
+      align-items: center;
+      justify-content: space-between;
+      
+}
+header.scrolled {
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  z-index: 2;
+} 
+.menu-mobile {
+  display: none;
+}
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  height: 80px;
+}
+
+.logo-container img {
+  width: 60px;
+  height: 60px;
+  margin: 8px;
+  padding: 0;
+}
+
+.logo-container h2 {
+  display: inline-block;
+  max-width: 300px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: 'Montserrat';
+  font-style: normal;
+  line-height: 39px;
+  color: #fff;
+  margin-left: 8px;
+}
+
+.logo-container a {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: 'Montserrat';
+  font-style: normal;
+  line-height: 39px;
+  color: rgb(128, 0, 106);
+}
+
+
+/* Menu */
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu ul {
+  display: flex;
+}
+.menu ul li {
+  list-style: none;
+  margin-right: 30px;
+}
+.menu a {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  color: #cbcbcb;
+}
+/* Ícones de rede social */
+.social-icons {
+  align-items: right;
+}
+.social-icons a {
+  margin-left: 10px;
+  color: rgb(143, 2, 101);
+  font-size: 24px;
+}
+
+/* Seção home */
+#home {
+  background: url(../img/foto\ 01.jpg);
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  z-index: -1;
+  align-items: center;
+  justify-content: center; 
+}
+ 
+/* Seção portfolio */
+#portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  padding-top: 300px;
+  padding-bottom: 100px;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+}
+.titulo-portfolio {
+  position: absolute;
+  width: 271px;
+  height: 59px;
+  margin-top: -700px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.53);
+} 
+.texto-portfolio {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.61);
+  margin-top: -550px;    
+}
+.portfolio-item {
+  width: 290px;
+  margin: 16px;
+  text-align: left;
+}
+.portfolio-item img {
+  max-width: 290px;
+  max-height: 326;
+  border-radius: 8px;
+}
+.portfolio-item h2 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.61);
+  margin: 0;
+  margin-top: 4px;
+}
+.portfolio-item p{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: rgba(255, 255, 255, 0.61);
+  margin: 0;
+}
+  
+/* Seção sobre */
+#about {
+  background-color: rgb(255, 255, 255);
+  height: 2200px;
+}
+.container-about {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 85%;
+  margin: 0 auto;
+}
+.about-title {
+display: flex;
+width: 100%;
+max-height: 56px;
+margin-left: 16px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 59px;
+color: rgba(0, 0, 0, 0.6);
+}
+.about-text {
+  width: 700px;
+  height: 100%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 39px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-left: 16px;
+}
+.about-image {  
+  max-width: 500px;
+  height: auto;
+  margin-right: 11px;
+  margin-left: 64px;
+  margin-top: 30px;
+}
+.about-space {
+  width: 181px;
+  border-radius: 8px;
+  border: 2px solid #cbcbcb;
+  margin: 0 auto;
+  margin-top: 180px;
+}
+.skills-title {
+  display: flex;
+  height: 20px;
+  width: 100%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 150px;
+  margin-left: 16px;
+}
+.skills-image {
+  max-width: 500px;
+  height: auto;
+  margin-left: 16px;
+  margin-top: 64px;
+}
+.skills-text {
+    width: 700px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 39px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-left: 64px;
+    margin-right: 11px;
+    margin-top: 64px;
+}
+.owl-item-opacity-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+}
+
+.owl-item-opacity {
+  
+  width: 30%;
+  height: 100%;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.owl-item-opacity:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.owl-item-opacity img {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin-left: 100px;
+  
+}
+
+.owl-item-opacity h3, .owl-item-opacity p {
+  text-align: center;
+}
+
+
+/* Seção contato */
+#contact {
+  padding: 1rem;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+#contact h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Montserrat';
+  font-style: normal;
+  line-height: 39px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0,8rem;
+}
+.form-group label {
+  font-size: 1.2rem;
+  font-weight: medium;
+  margin-bottom: 0.2rem;
+  font-family: 'Montserrat';
+  font-style: normal;
+  line-height: 39px;
+  color: rgb(136, 136, 136);
+}
+.form-group input,
+.form-group textarea {
+  width: 60%;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button[type="submit"] {
+  padding: 0.5rem 2rem;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: medium;
+  font-family: 'Montserrat';
+  font-style: normal;
+  line-height: 39px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  padding: 40px 0;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.logo img{
+  width: 150px;
+  margin-left:16px;
+}
+.logo h2 {
+  font-size: 1,5rem;
+  font-weight: 300;
+  font-family: 'Montserrat';
+  font-style: normal;
+  line-height: 39px;
+}
+.logo a {
+  font-size: 1,5rem;
+  font-weight: 300;
+  font-family: 'Montserrat';
+  font-style: normal;
+  line-height: 39px;
+  color: rgb(128, 0, 106); 
+}
+.menu-footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-footer li {
+  margin: 0 10px;
+}
+.menu-footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1,5rem;
+  font-weight: 300;
+  font-family: 'Montserrat';
+  font-style: normal;
+  line-height: 39px;
+}
+.social i {
+  font-size: 20px;
+  color: rgb(128, 0, 106);
+  margin-right: 10px;
+}
+  
+  
+/* Media Queries */
+
+  
+/* Quebra para 2 fotos por linha para tablet */
+@media (max-width: 768px) {
+    .portfolio-item {
+        width: 45%;
+    }
+    #about img {
+    width: 50%;
+    }
+    form {
+    width: 80%;
+    }
+    .menu-mobile.ativo {
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      z-index: 1;
+  }
+
+  .menu-mobile.ativo ul {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .menu-mobile.ativo li {
+      width: 100%;
+  }
+}
+
+    
+/* Quebra para 1 foto por linha para mobile */
+@media (max-width: 480px) {
+    .portfolio-item {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    #about img {
+    width: auto;
+    display: flexbox;
+    margin-left: 20px;
+    }
+    form {
+    width: 90%;
+    }
+    }
